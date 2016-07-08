@@ -23,6 +23,11 @@ class PairRandomizerTableViewController: UITableViewController {
         presentAlertController()
     }
     
+    @IBAction func randomizerTapped(sender: AnyObject) {
+        
+    }
+    
+    
     
     // MARK: - Alert Controller
     
@@ -58,15 +63,16 @@ class PairRandomizerTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         guard let sections = PersonController.sharedController.fetchedResultsController.sections else { return 0 }
-        return sections[section].numberOfObjects
+        return sections[section].numberOfObjects ?? 2 
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("nameCell", forIndexPath: indexPath)
-        guard let person = PersonController.sharedController.fetchedResultsController.objectAtIndexPath(indexPath) as? Person else {
+       guard let cell = tableView.dequeueReusableCellWithIdentifier("nameCell", forIndexPath: indexPath) as? NameTableViewCell,
+        person = PersonController.sharedController.fetchedResultsController.objectAtIndexPath(indexPath) as? Person else {
             return UITableViewCell()
         }
+        cell.updateWithPerson(person)
         return cell
     }
     

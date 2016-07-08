@@ -11,14 +11,13 @@ import CoreData
 
 
 class Person: NSManagedObject {
-
-    convenience init?(name: String, context: NSManagedObjectContext = Stack.sharedStack.managedObjectContext) {
+  
+    convenience init?(name: String, added: Bool = true, context: NSManagedObjectContext = Stack.sharedStack.managedObjectContext) {
         
         guard let entity = NSEntityDescription.entityForName("Person", inManagedObjectContext: context) else {return nil}
         
         self.init(entity: entity, insertIntoManagedObjectContext: context)
-        
         self.name = name
-        
+        self.added = added
     }
 }

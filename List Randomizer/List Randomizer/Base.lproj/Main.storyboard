@@ -17,6 +17,9 @@
                             <rect key="frame" x="0.0" y="136" width="600" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" title="Randomize"/>
+                            <connections>
+                                <action selector="randomizerTapped:" destination="EWT-QC-LVR" eventType="touchUpInside" id="bxE-1O-gfb"/>
+                            </connections>
                         </button>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="nameCell" id="5Nz-Fo-tCI" customClass="NameTableViewCell" customModule="List_Randomizer" customModuleProvider="target">

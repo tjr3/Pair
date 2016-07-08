@@ -15,13 +15,11 @@ class PersonController {
     
     var fetchedResultsController: NSFetchedResultsController
     
-    var personArray: [Person] = []
-    
     init() {
         let request = NSFetchRequest(entityName: "Person")
-        let sortDescriptor = NSSortDescriptor(key: "name", ascending: false)
+        let sortDescriptor = NSSortDescriptor(key: "added", ascending: false)
         request.sortDescriptors = [sortDescriptor]
-        fetchedResultsController = NSFetchedResultsController(fetchRequest: request, managedObjectContext: Stack.sharedStack.managedObjectContext, sectionNameKeyPath: "name", cacheName: nil)
+        fetchedResultsController = NSFetchedResultsController(fetchRequest: request, managedObjectContext: Stack.sharedStack.managedObjectContext, sectionNameKeyPath: "added", cacheName: nil)
         _ = try? fetchedResultsController.performFetch()
     }
     

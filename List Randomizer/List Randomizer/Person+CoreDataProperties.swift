@@ -14,6 +14,7 @@ import CoreData
 
 extension Person {
 
-    @NSManaged var name: String?
+    @NSManaged var name: String
+    @NSManaged var added: NSNumber
 
 }

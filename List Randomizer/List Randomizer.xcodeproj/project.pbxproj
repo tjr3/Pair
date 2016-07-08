@@ -17,9 +17,10 @@
 		CE8DB1A71D300317003B6126 /* PersonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8DB1A61D300317003B6126 /* PersonController.swift */; };
 		CE8DB1AB1D3004E8003B6126 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE8DB1A91D3004E8003B6126 /* Model.xcdatamodeld */; };
 		CE8DB1AD1D300565003B6126 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8DB1AC1D300565003B6126 /* Stack.swift */; };
-		CE8DB1B41D300637003B6126 /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8DB1B21D300637003B6126 /* Person+CoreDataProperties.swift */; };
-		CE8DB1B51D300637003B6126 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8DB1B31D300637003B6126 /* Person.swift */; };
 		CE8DB1B71D301BB4003B6126 /* NameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8DB1B61D301BB4003B6126 /* NameTableViewCell.swift */; };
+		CE8DB1BE1D3022B7003B6126 /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8DB1BC1D3022B7003B6126 /* Person+CoreDataProperties.swift */; };
+		CE8DB1BF1D3022B7003B6126 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8DB1BD1D3022B7003B6126 /* Person.swift */; };
+		CE8DB1C11D30268A003B6126 /* Randomizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8DB1C01D30268A003B6126 /* Randomizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,9 +57,10 @@
 		CE8DB1A61D300317003B6126 /* PersonController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonController.swift; sourceTree = "<group>"; };
 		CE8DB1AA1D3004E8003B6126 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		CE8DB1AC1D300565003B6126 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
-		CE8DB1B21D300637003B6126 /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		CE8DB1B31D300637003B6126 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		CE8DB1B61D301BB4003B6126 /* NameTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameTableViewCell.swift; sourceTree = "<group>"; };
+		CE8DB1BC1D3022B7003B6126 /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CE8DB1BD1D3022B7003B6126 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		CE8DB1C01D30268A003B6126 /* Randomizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Randomizer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,8 +146,8 @@
 			isa = PBXGroup;
 			children = (
 				CE8DB1A91D3004E8003B6126 /* Model.xcdatamodeld */,
-				CE8DB1B21D300637003B6126 /* Person+CoreDataProperties.swift */,
-				CE8DB1B31D300637003B6126 /* Person.swift */,
+				CE8DB1BC1D3022B7003B6126 /* Person+CoreDataProperties.swift */,
+				CE8DB1BD1D3022B7003B6126 /* Person.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -155,6 +157,7 @@
 			children = (
 				CE8DB19F1D3001F2003B6126 /* PairRandomizerTableViewController.swift */,
 				CE8DB1B61D301BB4003B6126 /* NameTableViewCell.swift */,
+				CE8DB1C01D30268A003B6126 /* Randomizer.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -298,13 +301,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE8DB1BE1D3022B7003B6126 /* Person+CoreDataProperties.swift in Sources */,
 				CE8DB1A71D300317003B6126 /* PersonController.swift in Sources */,
 				CE8DB1AB1D3004E8003B6126 /* Model.xcdatamodeld in Sources */,
-				CE8DB1B41D300637003B6126 /* Person+CoreDataProperties.swift in Sources */,
 				CE8DB1A01D3001F2003B6126 /* PairRandomizerTableViewController.swift in Sources */,
-				CE8DB1B51D300637003B6126 /* Person.swift in Sources */,
 				CE8DB1AD1D300565003B6126 /* Stack.swift in Sources */,
 				CE8DB1B71D301BB4003B6126 /* NameTableViewCell.swift in Sources */,
+				CE8DB1BF1D3022B7003B6126 /* Person.swift in Sources */,
+				CE8DB1C11D30268A003B6126 /* Randomizer.swift in Sources */,
 				CE8DB1721D2FFFC2003B6126 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
